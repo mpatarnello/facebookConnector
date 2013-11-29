@@ -33,7 +33,7 @@
         "objOperations" : {
             "friends" : {
                 "READ_INITIAL_SYNC, READ_NEW" : {
-                    "method": "GET", "url": "me/friends?fields=id,birthday,location.json"
+                    "method": "GET", "url": "me/friends?fields=id,birthday,location.json",
                     "evals": {
                         "success": "response.notFail",
                         "data": "response.json"
