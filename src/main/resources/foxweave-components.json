@@ -9,7 +9,7 @@
     },
     "dataModel": {
         "objects": {
-            "user_profile": {
+            "friends_info": {
                 "label": "Read User Profile",
                 "display": "none",
                 "fields" : [
@@ -21,8 +21,8 @@
             "friends": {
                 "label": "Friends",
                 "display": "InputConnector",
-                "extends" : "user_profile",
-                "hint": "User Information."
+                "extends" : "friends_info",
+                "hint": "Friends Information."
             },
           
         }
