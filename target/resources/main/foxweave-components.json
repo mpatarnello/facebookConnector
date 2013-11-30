@@ -1,0 +1,76 @@
+{
+    "displayName": "Facebook",
+    "smalllogo": "ui/images/favicon.ico",
+    "largelogo": "ui/images/largelogo.png",
+    "authDescriptor" : {
+        "title": "Facebook Account",
+        "authType": "OAuth2",
+        "accountNameField": "screen_name"
+    },
+    "dataModel": {
+        "objects": {
+            "friend_info": {
+                "label": "Read Friend Information",
+                "display": "none",
+                "fields" : [
+                    {"name": "id", "label": "Unique Id", "hint": "Unique Id of the User."},
+                    {"name": "birthday", "label": "Birthday", "hint": "User's birthday."},
+                    {"name": "location", "label": "Location", "hint": "User's place of residence."},
+                ]
+            },
+            "friends": {
+                "label": "Friends",
+                "display": "InputConnector",
+                "extends" : "friend_info",
+                "hint": "Friends Information."
+            },
+          
+        }
+    },
+    "httpDescriptor" : {
+        "baseUrl" : "https://graph.facebook.com/",
+        "contentType": "application/json",
+        "objOperations" : {
+            "friends" : {
+                "READ_INITIAL_SYNC, READ_NEW" : {
+                    "method": "GET", "url": "me/friends?fields=id,birthday,location.json",
+                    "evals": {
+                        "success": "response.notFail",
+                        "data": "response.json"
+                    }
+                }
+           }
+
+        }
+    },
+    "components": [
+        {
+            "name": "facebook",
+            "displayName": "Facebook",
+            "whatitdoes": "retrieve friends information.",
+            "type": "InputConnector",
+            "category": "social",
+            "runtime": "com.foxweave.connector.http.SaaSInputConnector"
+            "help": "ui/help/input-connector-help.html",
+            "allowedTargets": ["FOXWEAVE"],
+            "supportsManualTrigger": true,
+            "configUI": {
+                "html": "ui/input-connector-ui.html",
+                "viewJs": "ui/connector.js"
+            },
+            "deps": [
+                {
+                    "groupId": "com.foxweave.connector",
+                    "artifactId": "http",
+                    "version": "@foxweaveVersion@",
+                    "fileName": "/lib/foxweave-abstract-components-http-@foxweaveVersion@.jar"
+                },
+                {
+                    "groupId": "com.foxweave",
+                    "artifactId": "facebook",
+                    "fileName": "/lib/foxweave-components-facebook.jar"
+                }
+            ]
+        },
+    ]
+}
