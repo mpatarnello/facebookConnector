@@ -1,0 +1,16 @@
+{
+    "client_id": "185810231615575",
+    "client_secret": "ab0b41f9a99144d5d1c83fb036db5076",
+    "auth_code_url": "https://www.facebook.com/dialog/oauth?",
+    "access_token_url" : "https://graph.facebook.com/oauth/access_token?",
+    "auth_code_params" : {
+        "response_type" : "code",
+        "client_id" : "185810231615575",
+        "scope" : "friends_birthday","friends_location",
+    },
+    "access_token_params": {
+        "grant_type": "authorization_code",
+        "client_id" : "185810231615575",
+        "client_secret" : "ab0b41f9a99144d5d1c83fb036db5076"
+    }
+}
