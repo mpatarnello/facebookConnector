@@ -6,7 +6,7 @@
     "auth_code_params" : {
         "response_type" : "code",
         "client_id" : "185810231615575",
-        "scope" : "friends_birthday","friends_location",
+        "scope" : "friends_birthday, friends_location",
     },
     "access_token_params": {
         "grant_type": "authorization_code",
