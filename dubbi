@@ -1,0 +1,23 @@
+
+1   "access_token_params": {
+        "grant_type": "authorization_code",
+        "client_id" : "185810231615575",
+        "client_secret" : "ab0b41f9a99144d5d1c83fb036db5076"
+    }
+
+    I should have also the parameter code:
+
+    "code":"${valore_from_the_previous_call}"????
+
+
+2   redirect_uri in entrambe le chiamate e' obbligatoria, che famo???
+
+https://foxweave.cloudbees.com/oauth2/facebooktest1/facebook/access_token?code=AQAswfgwotdv0z_1cm_OTa-NUOOTIo-1OlTMAKkrRnGFo9Dc704C0RUad2tr3oHEj0XrrcKooMujlkAhVVUZqSmG5HG-XthCOOtteuR6nn6tKj-R8MvGsevS1I8OzpuNR-ch-kwnc2unJHrGE5YkIWTF3Mu3b28o89faOv2foWx7pXXjvzQdP14djzGvXGnXIDrs8zH93DED-foL1GH_E6LOZn2ILnbVEycaV_YQFASi6RBq87W0wjEPh_gg9wZQfuBCcvD5EwWdEjGLvuw-DqKK4y03CNijy2-jICa5Uan_JkF13e23eH0puItSvgjgoEI#_=_
+
+
+https://foxweave.cloudbees.com/oauth2/facebooktest2/facebook/access_token?code=AQB5-z8tdyIGa40z1F-KQFE8gT7lunKqB94DvbjtBaBdEtEzxD_Ts3JHTh37-sdvh0IDI4NUEoDvpuzUhKY7RH7Y1I8t4P1jC1nM3Ghs1SR8UNyNqBd2Vdz6eZssDMJwIWbyVBTfs7Hc_F2dwnr8UBQE-7MOWSLGY6lqu4e3qiTzMhf9dNdCp-Bt_u-rwdpJ7bM2VDS1YBVK9V6tQwZWaZea2nB_m3GtXrY11hKePTzSGQm10XLdPMNktPdPieY86MYTGSYgZRE1O1uI92R7KFKNnrfwSTmfunt-eRJwwxKEa-SGkRtwGY3565J-T9MfSbk#_=_
+
+
+https://foxweave.cloudbees.com/oauth2/facebooktest2/facebook/access_token?code=AQCgWAno_yQR0kgiae0dAu1mQCh8qLqioB4BcKVzbpvP15KclvpsTD6aefQEWjCxxuQH_JzFFdXn7ThcJBDUlQJuvkzOtsTX9DkSOcR_MPpT-EUTgX9VqwpZ_6z7PPijBh6aHZgMFLqV2PexmRHuznJuE9ZOWrYrfsPlrMQIJrd4qHjou7rjquD96cQz4XM2d3TgnAqd6B_6EMmNXT-SxiZRRLeJjQjxi6WkRFF7DOoZfgZjaKlOl8Dc69Af2fbTdVuMMnJrnxhixm_zNDlOzlQ-sHIAM57Ao3ClQb2N4HzP8EBVOXDGw4X3gDOzvK95tMI#_=_
+
+
