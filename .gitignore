@@ -1,3 +1,20 @@
-*/.DS_Store
-.target
-.dubbi
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+
+
+
+# generated target folder #
+target
+target/*
+
+dubbi
+dubbi/*
+
+#others#
+.project
+.classpath
+.settings/*
+.settings
